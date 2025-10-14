@@ -1,0 +1,125 @@
+/*
+ * ESTILOS GLOBALES
+ * Estos son básicos, asumiendo que ya tienes el resto de tu CSS.
+ */
+body {
+    background: radial-gradient(circle at top, #0a0a0f, #000 80%);
+    color: #f0f0f0;
+}
+
+/*
+ * ESTILOS ESPECÍFICOS PARA EL NAVBAR DE BOOTSTRAP
+ */
+.navbar {
+    /* Fondo: Oscuro con degradado y colores neón como borde */
+    background: linear-gradient(90deg, #0f0f0f, #1a0033, #0f0f0f) !important;
+    border-bottom: 3px solid #ff00ff; /* Borde fucsia neón */
+    box-shadow: 0 0 20px #ff00ff55;
+    padding: 0.5rem 1rem; /* Ajuste de padding */
+}
+
+.navbar-brand {
+    /* Estilo del título principal (similar a 'header h1') */
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffe5 !important; /* Azul neón */
+    text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5, 0 0 40px #ff00ff;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+/* Enlaces generales */
+.navbar-nav .nav-link {
+    color: #f0f0f0 !important;
+    font-weight: 500;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+/* Hover en enlaces (Azul neón) */
+.navbar-nav .nav-link:hover {
+    color: #00ffe5 !important;
+    text-shadow: 0 0 8px #00ffe5;
+}
+
+/* Enlace activo (Fucsia neón) */
+.navbar-nav .nav-link.active {
+    color: #ff00ff !important;
+    text-shadow: 0 0 8px #ff00ff;
+    border-bottom: 2px solid #ff00ff; /* Subrayado activo */
+    padding-bottom: 0.3rem;
+}
+
+/* Enlace deshabilitado */
+.navbar-nav .nav-link.disabled {
+    color: #444 !important;
+    text-shadow: none;
+    cursor: not-allowed;
+}
+/* El menú desplegable (el recuadro) */
+.dropdown-menu {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    border: 1px solid #ff00ff;
+    box-shadow: 0 0 15px #00ffe555;
+}
+
+/* Ítems dentro del menú */
+.dropdown-item {
+    color: #f0f0f0;
+    background-color: transparent;
+}
+
+/* Hover en ítems del menú */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #00ffe533; /* Fondo semi-transparente azul neón */
+    color: #00ffe5;
+    text-shadow: 0 0 5px #00ffe5;
+}
+
+/* El divisor */
+.dropdown-divider {
+    border-top: 1px solid #ff00ff;
+}
+
+.navbar-toggler {
+    border-color: #00ffe5 !important;
+    box-shadow: 0 0 10px #00ffe555 !important;
+}
+
+/* Cambia el color del ícono (las tres barras) a neón */
+.navbar-toggler-icon {
+    /* Filtro CSS para cambiar el color del SVG interno (aproximación) */
+    filter: invert(1) grayscale(100%) brightness(0.8) sepia(100%) hue-rotate(180deg) saturate(200%) contrast(150%);
+    /* Esto intentará darle un tono neón claro */
+}
+
+/* Campo de entrada (Input) */
+.navbar .form-control {
+    background-color: #1a1a2e;
+    border: 2px solid #333;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.navbar .form-control:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff !important;
+}
+
+/* Botón de búsqueda (Search Button) */
+.navbar .btn-outline-success {
+    /* Gradiente neón similar a tu #hero button */
+    background: linear-gradient(90deg, #00ffe5, #ff00ff);
+    color: #000 !important;
+    border: none !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffe5;
+    transition: 0.3s;
+}
+
+.navbar .btn-outline-success:hover {
+    box-shadow: 0 0 15px #ff00ff, 0 0 25px #00ffe5;
+    transform: scale(1.05);
+}
